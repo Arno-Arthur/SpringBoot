@@ -1,0 +1,27 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+<!--    <include file="db.changelog/1.0/registry.xml"/>-->
+    <include file="db.changelog/1.0/organization.xml"/>
+    <include file="db.changelog/1.0/user.xml"/>
+    <include file="db.changelog/1.0/token.xml"/>
+    <include file="db.changelog/1.0/call.xml"/>
+    <include file="db.changelog/1.0/medications.xml"/>
+    <include file="db.changelog/1.0/objectively.xml"/>
+    <include file="db.changelog/1.0/geopoint.xml"/>
+
+
+<!--    <include file="db.changelog/data/registry-data.xml"/>-->
+    <include file="db.changelog/data/organization-data.xml"/>
+    <include file="db.changelog/data/user-data.xml"/>
+    <include file="db.changelog/data/token-data.xml"/>
+    <include file="db.changelog/data/call-data.xml"/>
+    <include file="db.changelog/data/medications-data.xml"/>
+    <include file="db.changelog/data/objectively-data.xml"/>
+    <include file="db.changelog/data/geopoint-data.xml"/>
+
+
+</databaseChangeLog>
