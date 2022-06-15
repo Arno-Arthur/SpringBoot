@@ -14,8 +14,12 @@ import java.util.List;
 @Builder
 public class ResponseDto {
 
-    private String message;
+    public ResponseDto(String message, int code) {
+        this.message = message;
+        this.code = code;
+    }
 
+    private String message;
     private int code;
 
     @JsonInclude(JsonInclude.Include.NON_NULL)
