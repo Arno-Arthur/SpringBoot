@@ -47,6 +47,9 @@ public class UserDto {
         return organizationDto;
     }
 
+    @JsonProperty("config")
+    public String configDto;
+
     public static UserDto toDto(User user){
         return new UserDto(
                 TokenDto.toDto(user.getToken()),
@@ -57,7 +60,8 @@ public class UserDto {
                 user.getLastname(),
                 user.getWorkingPosition(),
                 user.getLogin(),
-                user.getPassword()
+                user.getPassword(),
+                ""
         );
     }
 

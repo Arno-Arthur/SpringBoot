@@ -1,10 +1,7 @@
 package com.arno;
 
-import org.h2.tools.Console;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-import java.sql.SQLException;
 
 // Response Codes:
 // 100 - Successful
@@ -17,13 +14,6 @@ import java.sql.SQLException;
 public class LibraryApp {
 
     public static void main(String[] args) {
-
         SpringApplication.run(LibraryApp.class, args);
-
-        try{
-            Console.main(args);
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
     }
 }

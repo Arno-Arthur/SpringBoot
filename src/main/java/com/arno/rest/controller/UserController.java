@@ -62,6 +62,7 @@ public class UserController {
 
         response.setMessage(response.getMessage() + "Авторизация успешна");
         userDtoNew.setTokenDto(TokenDto.toDto(token));
+        userDtoNew.setConfigDto("");
         response.setUser(userDtoNew);
         response.setCode(100);
 
