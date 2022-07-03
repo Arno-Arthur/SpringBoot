@@ -18,7 +18,7 @@ public class CallService {
     }
 
     public Call getById(int id) {
-        return callDao.findById(id).get();
+        return callDao.getById(id);
     }
 
     public void deleteById(int id) {
@@ -27,5 +27,10 @@ public class CallService {
 
     public List<Call> getForUser(int userId) {
         return callDao.getAllForUser(userId);
+    }
+
+    public int addCall(Call call) {
+        Call c = callDao.save(call);
+        return c.getId();
     }
 }

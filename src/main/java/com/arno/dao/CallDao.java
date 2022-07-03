@@ -11,4 +11,7 @@ public interface CallDao extends JpaRepository<Call,Integer> {
 
     @Query(value = "SELECT * FROM call c WHERE c.user_id =:user_id", nativeQuery = true)
     List<Call> getAllForUser(@Param("user_id") int userId);
+
+    @Query(value = "SELECT * FROM call c WHERE c.id =:id", nativeQuery = true)
+    Call getById(@Param("id") int id);
 }
